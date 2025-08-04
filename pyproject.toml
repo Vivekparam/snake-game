@@ -1,0 +1,11 @@
+[project]
+name = "snake"
+version = "0.1.0"
+description = "Classic snake game"
+authors = [{ name = "Vivek Paramasivam", email = "vivekkparam+github@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pygame==2.6.1",
+    "loguru==0.7.3"
+]

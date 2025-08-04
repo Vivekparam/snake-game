@@ -1,0 +1,21 @@
+[GLOBAL]
+pants_version = "2.27.0"
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.build_files.fmt.ruff",
+  "pants.backend.experimental.python.lint.ruff.check",
+  "pants.backend.experimental.python.lint.ruff.format",
+  "pants.backend.experimental.python.typecheck.pyright",
+  "pants.backend.python.typecheck.mypy",
+]
+
+[python]
+interpreter_constraints = ["CPython>=3.12"]
+enable_resolves = true
+default_resolve = "python-default"
+
+[python.resolves]
+python-default = "3rdparty/python/lockfile.txt"
+
+[source]
+root_patterns = ["src"]

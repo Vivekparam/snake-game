@@ -1,0 +1,1 @@
+pants run src/snake_game:run_game
