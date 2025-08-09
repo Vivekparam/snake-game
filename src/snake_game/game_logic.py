@@ -1,6 +1,6 @@
 from loguru import logger as log
 
-from lib.models import (
+from snake_lib.models import (
     GAME_HEIGHT,
     GAME_WIDTH,
     Direction,
@@ -9,7 +9,7 @@ from lib.models import (
     MoveResult,
     Snake,
 )
-from lib.ui.game_ui import SnakeUI, UserInput
+from snake_lib.ui.game_ui import SnakeUI, UserInput
 
 
 def run_game_loop() -> None:

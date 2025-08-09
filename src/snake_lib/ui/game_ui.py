@@ -1,7 +1,7 @@
 from typing import Final
 import pygame
 
-from lib.models import Direction, Food, Snake
+from snake_lib.models import Direction, Food, Snake
 from loguru import logger as log
 
 _GAME_BORDER_WIDTH: Final = 5
